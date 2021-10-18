@@ -1,14 +1,14 @@
 "use strict";
-let slideIndex = 1;
-showDivs(slideIndex);
+let slideIndex = 1; //start point
+showDivs(slideIndex); // calling function with argument of value slideIndex which is 1
 
 function plusDivs(n) {
-  showDivs((slideIndex += n));
+  showDivs((slideIndex += n)); // this function just add +1.
 }
 
 function showDivs(n) {
   let i;
-  let x = document.getElementsByClassName("mySlides");
+  let x = document.getElementsByClassName("mySlides"); // this fetches all the image slide
   if (n > x.length) {
     slideIndex = 1;
   }
